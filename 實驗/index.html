@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head> 
+</head>
+<body >
+    <div style="width:100%;height:auto;">
+        <img src="head.PNG" style="width:100%;height:auto;">
+
+        <div id="hide" style="display:none;margin-left:8%;height:10%;position:fixed;"><a  href="http://google.com" style="color:white;background-color:red;font-family: Microsoft JhengHei;font-size:30px;">影片結束，點我做問卷</a></div>
+        <div style="margin-left:8%;float:left;margin-top:5%;height:auto;width:50%;">
+
+            <video id="myvideo" src="test.mp4" style="height:auto;width:100%" controls="controls"></video>
+            <div style="height:100%;width:50%;float:left;">
+                <p style="font-family: Microsoft JhengHei;font-size:20px;">為什麼臉上會有粉刺？要怎麼清粉刺才會清的乾淨？</p>
+                <p style="font-family: Microsoft JhengHei;font-size:18px;color:gray;">觀看次數：10000次</p>
+            </div>
+            <div style="height:auto;width:50%;float:left;">
+                <img src="test2.PNG" style="width:100%;height:100%;">
+            </div>
+            <div style="height:auto;width:100%;">
+                <img src="test.PNG" style="width:100%;height:100%;">
+            </div>
+        </div>
+        <div style="margin-left:5%;margin-top:5%;float:left;width:30%;height:auto;"><img src="right.PNG" style="width:100%;height:auto;"></div>
+
+    </div>
+    <script type="text/javascript">
+        var video = document.getElementById('myvideo');
+        var hide = document.getElementById('hide');
+            video.onended = function(){
+            hide.style.display=""; 
+                            }
+     
+       
+       
+    </script>
+</body>
+</html>
